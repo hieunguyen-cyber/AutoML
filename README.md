@@ -29,48 +29,48 @@
 ```bash
 git clone https://github.com/your-username/automl-pipeline.git
 cd automl-pipeline
-
+```
 2. Tạo môi trường và cài dependencies
-
+```bash
 conda create -n automl_env python=3.10 -y
 conda activate automl_env
 pip install -r requirements.txt
-
+```
 
 ⸻
 
-🐘 PostgreSQL (nếu dùng kết nối SQL)
+PostgreSQL (nếu dùng kết nối SQL)
 
 Cài bằng Docker:
-
+```bash
 docker run --name pg-automl -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 
 Hoặc cài local trên Mac/Linux:
 
 brew install postgresql
 pg_ctl -D /usr/local/var/postgres start
-
+```
 Kết nối với host:
-
+```bash
 host: localhost
 port: 5432
 user: postgres
 password: postgres
 database: your_database
-
+```
 
 ⸻
 
-Chạy ứng dụng
-
+### Chạy ứng dụng
+```bash
 streamlit run main.py
-
+```
 Ứng dụng sẽ mở tại http://localhost:8501
 
 ⸻
 
-Cấu trúc dự án
-
+### Cấu trúc dự án
+```python
 automl-pipeline/
 ├── main.py               # Giao diện Streamlit chính
 ├── importer.py           # Upload, tạo bảng, đọc file
@@ -80,10 +80,10 @@ automl-pipeline/
 ├── sweetviz_report.html
 ├── requirements.txt
 └── README.md
-
+```
 ⸻
 
-💡 Hướng phát triển
+Hướng phát triển
 	•	Tích hợp MLflow để log toàn bộ mô hình + chỉ số
 	•	Kết nối CI/CD bằng GitHub Actions để deploy pipeline
 	•	Tự động lưu mô hình tốt nhất + tải dashboard
