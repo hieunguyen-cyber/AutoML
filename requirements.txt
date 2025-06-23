@@ -1,0 +1,9 @@
+streamlit
+pandas
+sqlalchemy
+sweetviz
+evalml
+matplotlib
+scikit-learn
+numpy
+pandas
