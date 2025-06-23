@@ -81,12 +81,16 @@ automl-pipeline/
 ├── requirements.txt
 └── README.md
 ```
-⸻
+---
 
-Hướng phát triển
-	•	Tích hợp MLflow để log toàn bộ mô hình + chỉ số
-	•	Kết nối CI/CD bằng GitHub Actions để deploy pipeline
-	•	Tự động lưu mô hình tốt nhất + tải dashboard
-	•	Giao diện kéo-thả dữ liệu, không cần viết code
+## 🔮 Hướng phát triển
+
+- ✅ **Tích hợp [MLflow](https://mlflow.org/):** để log toàn bộ mô hình, siêu tham số, và các chỉ số đánh giá — giúp quản lý phiên bản mô hình tốt hơn.
+
+- 🔁 **Kết nối CI/CD với GitHub Actions:** tự động hóa quy trình huấn luyện và triển khai pipeline khi có dữ liệu hoặc mã mới được cập nhật.
+
+- 💾 **Tự động lưu mô hình tốt nhất:** cho phép export pipeline tốt nhất và tải về dashboard báo cáo dưới dạng HTML/PDF.
+
+- 🖱️ **Giao diện kéo-thả dữ liệu:** phát triển giao diện không cần dòng lệnh, giúp người dùng không chuyên cũng dễ dàng chạy AutoML.
 
 ---
